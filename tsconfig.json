@@ -2,6 +2,7 @@
     "include": ["src/**/*"],
     "compilerOptions": {
       "strict": true,
+      "incremental": true,
       "removeComments": true,
       "preserveConstEnums": true,
       "sourceMap": true,
