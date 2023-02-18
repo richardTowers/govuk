@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "jsx": "react",
+      "moduleResolution": "Node",
+      "module": "ES2022",
+      "rootDir": "src",
+      "outDir": "dist"
+    }
+  }
