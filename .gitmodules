@@ -1,0 +1,33 @@
+[submodule "government-frontend"]
+	path = submodules/government-frontend
+	url = https://github.com/alphagov/government-frontend.git
+[submodule "collections"]
+	path = submodules/collections
+	url = https://github.com/alphagov/collections.git
+[submodule "whitehall"]
+	path = submodules/whitehall
+	url = https://github.com/alphagov/whitehall.git
+[submodule "frontend"]
+	path = submodules/frontend
+	url = https://github.com/alphagov/frontend.git
+[submodule "info-frontend"]
+	path = submodules/info-frontend
+	url = https://github.com/alphagov/info-frontend.git
+[submodule "email-alert-frontend"]
+	path = submodules/email-alert-frontend
+	url = https://github.com/alphagov/email-alert-frontend.git
+[submodule "service-manual-frontend"]
+	path = submodules/service-manual-frontend
+	url = https://github.com/alphagov/service-manual-frontend.git
+[submodule "static"]
+	path = submodules/static
+	url = https://github.com/alphagov/static.git
+[submodule "smart-answers"]
+	path = submodules/smart-answers
+	url = https://github.com/alphagov/smart-answers.git
+[submodule "search-api"]
+	path = submodules/search-api
+	url = https://github.com/alphagov/search-api.git
+[submodule "feedback"]
+	path = submodules/feedback
+	url = https://github.com/alphagov/feedback.git
