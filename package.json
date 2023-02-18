@@ -5,13 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "compile": "tsc",
-    "start": "ts-node --esm ./src/index.ts",
+    "start": "ts-node ./src/index.ts",
     "test": "jest"
   },
   "jest": {
     "rootDir": "src",
-    "transform": {
-      "[.]ts$": "ts-jest"
+    "preset": "ts-jest",
+    "moduleNameMapper": {
+      "(.+)[.]js": "$1"
     }
   },
   "author": "Richard Towers",
@@ -19,6 +20,8 @@
   "homepage": "https://github.com/richardTowers/govuk#readme",
   "type": "module",
   "dependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "koa": "^2.14.1",
     "koa-router": "^12.0.0",
     "react": "^18.2.0",

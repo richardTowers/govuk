@@ -7,9 +7,12 @@
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       "jsx": "react",
-      "moduleResolution": "Node",
+      "moduleResolution": "nodenext",
       "module": "ES2022",
       "rootDir": "src",
       "outDir": "dist"
+    },
+    "ts-node": {
+      "esm": true
     }
   }
