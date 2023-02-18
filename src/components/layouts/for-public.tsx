@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function LayoutForPublic(props?: React.PropsWithChildren<{title: string}>) {
+export default function LayoutForPublic(props: React.PropsWithChildren<{title: string}>) {
   return (
     <html lang="en" className="govuk-template">
       <head>

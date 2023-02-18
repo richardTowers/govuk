@@ -1,6 +1,7 @@
 {
+    "include": ["src/**/*"],
     "compilerOptions": {
-      "noImplicitAny": true,
+      "strict": true,
       "removeComments": true,
       "preserveConstEnums": true,
       "sourceMap": true,
@@ -9,7 +10,6 @@
       "jsx": "react",
       "moduleResolution": "nodenext",
       "module": "ES2022",
-      "rootDir": "src",
       "outDir": "dist"
     },
     "ts-node": {
