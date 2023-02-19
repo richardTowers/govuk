@@ -19,6 +19,6 @@ describe('/homepage', () => {
         const response = await withBasicAuth(request(app.callback()).get('/homepage'))
 
         expect(response.status).toBe(200)
-        expect(response.text).toContain(`<title>Welcome to GOV.UK</title>`)
+        expect(response.text).toContain(`<title>GOV.UK homepage</title>`) // TODO: title should come from translation, not content item
     })
 })

@@ -66,7 +66,7 @@ export default z
           .describe("Link type automatically added by Publishing API")
           .optional(),
       })
-      .strict(),
+      .catchall(z.any()),
     locale: z.any(),
     need_ids: z.array(z.string()).optional(),
     phase: z
