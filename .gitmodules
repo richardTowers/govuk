@@ -31,3 +31,6 @@
 [submodule "feedback"]
 	path = submodules/feedback
 	url = https://github.com/alphagov/feedback.git
+[submodule "publishing-api"]
+	path = submodules/publishing-api
+	url = https://github.com/alphagov/publishing-api.git
