@@ -1,8 +1,8 @@
 import {readFile} from 'fs/promises'
 import {parse} from 'yaml'
-import { z } from "zod";
+import {z} from 'zod'
 
-export const translations = z.object({
+const translations = z.object({
   en: z.object({
     a: z.string(),
     ab_testing: z.object({

@@ -5,7 +5,7 @@ const mappings = [
     {
         source: 'publishing-api/content_schemas/dist/formats/homepage/frontend/schema.json',
         destFolder: 'publishing-api',
-        name: 'homepage-content-schema',
+        fileName: 'homepage-content-schema',
         schemaPatches: (jsonSchema: any) => {
             // The homepage content item has additional links, even though the schema says it shouldn't
             jsonSchema.properties.links.additionalProperties = true
@@ -18,6 +18,6 @@ for(const mapping of mappings) {
     mapping.schemaPatches(schema)
     const result = jsonSchemaToZod(schema)
     mkdirSync(`src/zod/${mapping.destFolder}`, {recursive: true})
-    writeFileSync(`src/zod/${mapping.destFolder}/${mapping.name}.ts`, result)
+    writeFileSync(`src/zod/${mapping.destFolder}/${mapping.fileName}.ts`, result)
 }
 

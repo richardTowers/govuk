@@ -435,7 +435,7 @@ const translations = z.object({
 
 
 export default async function loadTranslations() {
-  const content = await readFile('submodules/government-frontend/translations.ts')
+  const content = await readFile('submodules/government-frontend/config/locales/en.yml')
   const yaml = parse(content.toString())
   return translations.parse(yaml)
 }
