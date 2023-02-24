@@ -12,7 +12,7 @@
     "rootDir": "src",
     "preset": "ts-jest",
     "moduleNameMapper": {
-      "(.+)[.]js": "$1"
+      "([.]+/.+)[.]js": "$1"
     }
   },
   "author": "Richard Towers",
@@ -38,6 +38,7 @@
     "jest": "^29.4.3",
     "json-schema-to-zod": "^0.6.3",
     "json-to-zod": "^1.1.2",
+    "parse5": "^7.1.2",
     "supertest": "^6.3.3",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",

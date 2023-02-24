@@ -11,11 +11,18 @@ const router = new KoaRouter()
 
 addBasicAuth(app)
 
+function render(element: JSX.Element) {
+    return (`<!doctype html>
+${renderToStaticMarkup(element)}
+<!-- Thanks Martha! -->
+`)
+}
+
 router.get('/', ctx => {
-    ctx.body = renderToStaticMarkup(<Index />) + '\n'
+    ctx.body = render(<Index />)
 }).get('/homepage', async (ctx) => {
     const Home = await prepareHome()
-    ctx.body = renderToStaticMarkup(<Home />) + '\n'
+    ctx.body = render(<Home />)
 })
 
 app.use(router.routes())
