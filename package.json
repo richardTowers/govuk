@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "compile": "tsc",
+    "import-translations": "ts-node ./scripts/import-translations-as-zod.ts",
+    "import-content-schemas": "ts-node ./scripts/import-content-schemas-as-zod.ts",
     "start": "ts-node ./src/index.ts",
     "test": "jest"
   },

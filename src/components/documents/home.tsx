@@ -5,12 +5,12 @@ import homepageContentSchema from '../../zod/publishing-api/homepage-content-sch
 
 export default async function prepareHome () {
     const [translations, contentItem] = await Promise.all([
-        loadTranslations(),
+        loadTranslations('en'),
         fetch('https://www.gov.uk/api/content')
             .then(x => x.json())
             .then(x => homepageContentSchema.parse(x))
     ])
-    const introTitleHtml = { __html: translations.en.homepage.index.intro_title.html }
+    const introTitleHtml = { __html: translations.homepage.index.intro_title.html }
 
     return function Home() {
         // TODO: title={contentItem.title} is actually wrong - the title comes from a translations file, not from the contentItem
